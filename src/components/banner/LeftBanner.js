@@ -31,7 +31,7 @@ const LeftBanner=() =>{
   };
 
     return (
-      <div className="w-1/2 flex flex-col gap-14">
+      <div className="w-full lgl:w-1/2 flex flex-col gap-14">
         <div className="flex flex-col gap-5">
           <h4 className="text-lg font-normal">WELCOME TO MY WORLD</h4>
           <h1 className="text-5xl font-bold text-white">
@@ -60,7 +60,7 @@ const LeftBanner=() =>{
             UI/UX Designer
           </button>
         </div>
-        <div className="bg-red -400 flex space-x-20 lg:space-x-25">
+        <div className="bg-red -400 flex flex-col xl:flex-row gap-6 lgl:gap-0  space-x-20 lg:space-x-25">
           <div>
             <h2 className="text-base uppercase font-titleFont mb-4 ">
               Find me in
