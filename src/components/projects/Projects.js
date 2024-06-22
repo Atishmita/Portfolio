@@ -21,7 +21,7 @@ const Projects = () => {
           des="Developed a responsive website for the Radar and Sensor Wing of DRDO,Chandipur using React framework. "
           src={projectOne}
           githubLink="https://github.com/Atishmita/R-S-Wing-Website"
-          websiteLink="https://dashboard-atishmita.netlify.app"
+          websiteLink="https://radarandsensor.netlify.app/"
         />
         <ProjectsCard
           title="Dashboard"
