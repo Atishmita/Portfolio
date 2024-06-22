@@ -16,6 +16,12 @@ const Experience = () => {
         <div className="flex">
           <div className=" mt-14 w-1/2 h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10 mr-20">
             <ResumeCard
+              title="Summer Intern"
+              subTitle="DRDO,Chandipur Balasore"
+              result="May 24 - June 24"
+              des=" Contributed in the development of GUI for signal processing applications and developed a responsive website for the Radar and Sensor Wing of DRDO using react framework."
+            />
+            <ResumeCard
               title="Frontend Developer Intern"
               subTitle="Lancyfirm"
               result="Dec 22 - Mar 23"
@@ -26,12 +32,6 @@ const Experience = () => {
               subTitle="Zopiqa"
               result="Apr 23 - Jun 23"
               des="During my internship at Zopiqa, I worked on creating user-friendly interfaces through research, prototyping, and collaboration with the design and development teams."
-            />
-            <ResumeCard
-              title="User Interface Desiging Intern"
-              subTitle="Lancyfirm"
-              result="Dec 22 - Mar 23"
-              des="Designed the User-friendly Lancyfirm official website from scratch trough research, prototyping and wireframing "
             />
           </div>
           <div className=" mt-14 w-1/2 h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">

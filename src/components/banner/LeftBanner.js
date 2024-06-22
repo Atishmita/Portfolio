@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { FaFacebookF, FaTwitter, FaReact, FaLinkedinIn } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiHtml5, SiJavascript } from "react-icons/si";
+import { navLinksdata } from "../../constants";
+import { Link } from "react-scroll";
 
 const LeftBanner=() =>{
      const [text] = useTypewriter({
@@ -29,6 +31,11 @@ const LeftBanner=() =>{
       "_blank"
     );
   };
+    const handleClickUXDesigner = () => {
+      window.open("https://www.behance.net/atishmitadash1", "_blank");
+    };
+    
+  const [showMenu, setShowMenu] = useState(false);
 
     return (
       <div className="w-full lgl:w-1/2 flex flex-col gap-14">
@@ -47,16 +54,36 @@ const LeftBanner=() =>{
             />
           </h2>
           <p className="text-base font-bodyFont leading-6 tracking-wide">
-            I am a Prefinal year student with expertise in coding, frontend
+            I am a Final year student with expertise in coding, frontend
             development, and UI/UX design. I deliver innovative solutions that
             prioritize functionality, aesthetics, and user satisfaction.
           </p>
         </div>
         <div className=" flex items-center space-x-6 lg:space-x-12">
-          <button className="text-designColor capitalize font-semibold rounded-md outline-2 outline outline-offset- outline-designColor pt-3 pr-4 pb-3 pl-4">
-            Frontend Developer
-          </button>
-          <button className="bg-designColor font-semibold  rounded-md outline outline-offset- outline-designColor pt-3 pr-4 pb-3 pl-4">
+          {navLinksdata.map((item) =>
+            item.link === "projects" ? (
+              <button
+                key={item.id}
+                className="text-designColor capitalize font-semibold rounded-md outline-2 outline outline-offset- outline-designColor pt-3 pr-4 pb-3 pl-4"
+              >
+                <Link
+                  onClick={() => setShowMenu(false)}
+                  activeClass="active"
+                  to={item.link}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  Frontend Developer
+                </Link>
+              </button>
+            ) : null
+          )}
+          <button
+            className="bg-designColor font-semibold  rounded-md outline outline-offset- outline-designColor pt-3 pr-4 pb-3 pl-4"
+            onClick={handleClickUXDesigner}
+          >
             UI/UX Designer
           </button>
         </div>

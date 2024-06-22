@@ -18,7 +18,7 @@ const Education = () => {
           <ResumeCard
             title="Btech in Computer Science and Engineering"
             subTitle="Veer Surrendra Sai University Of Technology (2021-2025)"
-            result="8.83/10"
+            result="8.85/10"
             des=" Basic focus on algorithms, software development, and system optimization. Actively engaged in hands-on projects and workshops to enhance practical skills and stay updated with the latest industry trends."   />
           <ResumeCard
             title="Higher Secondary School of Education"

@@ -15,7 +15,7 @@ const Features = () => {
         {" "}
         <Card
           title="Web Development"
-          des="Expert in building dynamic and responsive websites with HTML, CSS, JavaScript, and frameworks. Passionate about creating seamless user experiences. "
+          des="Expert in building dynamic and responsive websites with HTML, CSS, JavaScript, and frameworks."
           icon={<FaGlobe />}
         />
         <Card

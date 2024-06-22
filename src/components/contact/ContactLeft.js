@@ -27,14 +27,9 @@ const ContactLeft = () => {
         src={contactImg}
         alt="contactImg"
       />
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-3">
         <h3 className="text-3xl font-bold text-white">Atishmita Dash</h3>
         <p className="text-lg font-normal text-gray-400">Web Developer</p>
-        <p className="text-base text-gray-400 tracking-wide">
-          Prefinal year student with expertise in frontend development,
-          competitive programming, UI/UX design, and graphic designing. Eager to
-          contribute and learn in innovative projects.
-        </p>
         <p className="text-base text-gray-400 flex items-center gap-2">
           Phone: <span className="text-lightText">+91 7681099969</span>
         </p>
@@ -43,7 +38,7 @@ const ContactLeft = () => {
         </p>
       </div>
       <div className="flex flex-col gap-4">
-        <h2 className="text-base uppercase font-titleFont mb-4">Find me in</h2>
+        <h2 className="text-base uppercase font-titleFont mb-2">Find me in</h2>
         <div className="flex gap-4">
           <span className="bannerIcon" onClick={handleClickFacebook}>
             <FaFacebook />
