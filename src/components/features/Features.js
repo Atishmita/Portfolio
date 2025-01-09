@@ -5,6 +5,12 @@ import { FaGlobe } from "react-icons/fa";
 import { SiAntdesign, SiCodingninjas, SiTaichigraphics } from "react-icons/si";
 
 const Features = () => {
+  const handleWebDevelopmentClick = () => {
+    const projectSection = document.getElementById("projects");
+    if (projectSection) {
+      projectSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section
       id="features"
@@ -15,24 +21,27 @@ const Features = () => {
         {" "}
         <Card
           title="Web Development"
-          des="Expert in building dynamic and responsive websites with HTML, CSS, JavaScript, and frameworks."
+          des="Expert in Building Dynamic and Responsive Web Applications with the MERN Stack."
           icon={<FaGlobe />}
+          onClick={handleWebDevelopmentClick}
         />
         <Card
-          title="Compititive Coding"
+          title="Competitive Coding"
           des="Skilled in algorithmic problem-solving and competitive coding. Passionate about continuous learning and mastering coding challenges."
           icon={<SiCodingninjas />}
-        />{" "}
+          onClick={() =>
+            window.open("https://leetcode.com/u/Atishmita_Dash/", "_blank")
+          }
+        />
         <Card
-          title="UI/UX Designer"
+          title="UI/UX Designing"
           des="Passionate about creating intuitive and engaging user interfaces. Skilled in wireframing, prototyping, and user-centric design."
           icon={<SiAntdesign />}
+          onClick={() =>
+            window.open("https://www.behance.net/atishmitadash1", "_blank")
+          }
         />
-        <Card
-          title="Graphic Designer"
-          des="Proficient in Photoshop and Illustrator for captivating designs. Experienced in logos, branding, and print materials."
-          icon={<SiTaichigraphics />}
-        />
+        
       </div>
     </section>
   );
